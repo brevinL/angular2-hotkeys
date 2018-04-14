@@ -8,7 +8,6 @@ export class Hotkey {
     static symbolize(combo: string): string {
         let map: any = {
             command : '\u2318',       // ⌘
-            shift : '\u21E7',         // ⇧
             left : '\u2190',          // ←
             right : '\u2192',         // →
             up : '\u2191',            // ↑
