@@ -114,9 +114,9 @@ import {Hotkey} from './hotkey.model';
   <h4 id="title" class="cfp-hotkeys-title" tabindex="0">{{ title }}</h4>
   <table>
     <thead>
-      <tr class="sr-only">
-        <th tabindex="0">Key Shortcut</th>
-        <th tabindex="0">Description</th>
+      <tr>
+        <th tabindex="0">Keystroke</th>
+        <th tabindex="0">Function</th>
       </tr>
     </thead>
     <tbody>
