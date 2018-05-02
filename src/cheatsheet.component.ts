@@ -111,16 +111,24 @@ import {Hotkey} from './hotkey.model';
   }
 }  `],
     template : `<div class="cfp-hotkeys-container fade" [ngClass]="{'in': helpVisible}" style="display:none"><div class="cfp-hotkeys">
-  <h4 class="cfp-hotkeys-title">{{ title }}</h4>
-  <table><tbody>
-    <tr *ngFor="let hotkey of hotkeys">
-      <td class="cfp-hotkeys-keys">
-        <span *ngFor="let key of hotkey.formatted" class="cfp-hotkeys-key">{{ key }}</span>
-      </td>
-      <td class="cfp-hotkeys-text">{{ hotkey.description }}</td>
-    </tr>
-  </tbody></table>
-  <div class="cfp-hotkeys-close" (click)="toggleCheatSheet()">&#215;</div>
+  <h4 id="title" class="cfp-hotkeys-title" tabindex="0">{{ title }}</h4>
+  <table>
+    <thead>
+      <tr class="sr-only">
+        <th tabindex="0">Key Shortcut</th>
+        <th tabindex="0">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hotkey of hotkeys">
+        <td class="cfp-hotkeys-keys">
+          <span *ngFor="let key of hotkey.formatted" class="cfp-hotkeys-key" tabindex="0">{{ key }}</span>
+        </td>
+        <td class="cfp-hotkeys-text" tabindex="0">{{ hotkey.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="cfp-hotkeys-close" (click)="toggleCheatSheet()" tabindex="0">&#215;</div>
 </div></div>`,
 })
 export class CheatSheetComponent implements OnInit, OnDestroy {
@@ -143,6 +151,7 @@ export class CheatSheetComponent implements OnInit, OnDestroy {
                 this.helpVisible = false;
             } else {
                 this.toggleCheatSheet();
+                document.getElementById("title").focus();
             }
         });
     }
