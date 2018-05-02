@@ -115,8 +115,8 @@ import {Hotkey} from './hotkey.model';
   <table>
     <thead>
       <tr>
-        <th tabindex="0">Keystroke</th>
-        <th tabindex="0">Function</th>
+        <th align="center" tabindex="0">Keystroke</th>
+        <th align="center" tabindex="0">Function</th>
       </tr>
     </thead>
     <tbody>
