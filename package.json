@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:brtnshrdr/angular2-hotkeys.git"
+    "url": "git@github.com:brevinL/angular2-hotkeys.git"
   },
   "author": {
-    "name": "Nick Richardson",
-    "email": "nick.richardson@mediapixeldesign.com"
+    "name": "Brian Phan",
+    "email": "nathanohno07@gmail.com"
   },
   "keywords": [
     "angular",
@@ -25,7 +25,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "git@github.com:brtnshrdr/angular2-hotkeys.git/issues"
+    "url": "git@github.com:brevinL/angular2-hotkeys.git/issues"
   },
   "main": "./index.js",
   "dependencies": {
