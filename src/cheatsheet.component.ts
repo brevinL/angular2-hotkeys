@@ -128,7 +128,7 @@ import {Hotkey} from './hotkey.model';
       </tr>
     </tbody>
   </table>
-  <div class="cfp-hotkeys-close" (click)="toggleCheatSheet()" tabindex="0">&#215;</div>
+  <div class="cfp-hotkeys-close" (click)="toggleCheatSheet()" tabindex="0" aria-label="close" role="button">&#215;</div>
 </div></div>`,
 })
 export class CheatSheetComponent implements OnInit, OnDestroy {
